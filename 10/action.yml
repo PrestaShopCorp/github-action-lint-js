@@ -1,0 +1,19 @@
+name: lint JS
+author: PrestaShop
+description: 'An easy GA to lint your JS projet without dev dependencies'
+branding:
+  icon: 'check'
+  color: 'blue'
+inputs:
+  cmd:
+    description: 'Add some config for vuejs project'
+    required: true
+  path:
+    description: 'Add path to your vuejs project'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cmd }}
+    - ${{ inputs.path }}
