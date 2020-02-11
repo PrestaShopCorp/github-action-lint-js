@@ -9,7 +9,7 @@ inputs:
     description: 'add to your package manager js like npm or yarn'
     required: true
   path:
-    description: 'Add path to your js project'
+    description: 'Specify a path to your js project'
     required: false
 runs:
   using: 'docker'

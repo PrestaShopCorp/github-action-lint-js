@@ -6,10 +6,10 @@ branding:
   color: 'blue'
 inputs:
   cmd:
-    description: 'add to your package manager js like npm or yarn'
+    description: 'Specify if you using npm or yarn'
     required: true
   path:
-    description: 'Add path to your js project'
+    description: 'Specify a path to your js project'
     required: false
 runs:
   using: 'docker'
