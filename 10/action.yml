@@ -1,0 +1,19 @@
+name: lint JS
+author: PrestaShop
+description: 'An easy GA to lint your JS projet'
+branding:
+  icon: 'check'
+  color: 'blue'
+inputs:
+  cmd:
+    description: 'Specify if you use npm or yarn'
+    required: true
+  path:
+    description: 'Specify a path to your js project'
+    required: false
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.cmd }}
+    - ${{ inputs.path }}
