@@ -1,4 +1,4 @@
-This action allow you to install and lint your JS file and get only compiled files (run it on node:10.x, 12.x, latest)
+This action allow you to install and lint your JS file and get only compiled files (run it on node:10.x, 12.x, 14.x, latest)
 
 You need to replace the inputs commands:
 
